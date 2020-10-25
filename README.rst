@@ -1,3 +1,52 @@
+# Instructions to label the data:
+
+- First follow the instructions on this readme file below on how to setup and install (Windows + Anaconda recommended).
+- Download dataset from [here](https://drive.google.com/file/d/18pDsp9oVApTHuzPUBG5bMMsx4H8pf34a/view?usp=sharing).
+- Run LabelImg using:
+
+```
+pyrcc5 -o libs/resources.py resources.qrc
+python labelImg.py
+```
+
+- The dataset is split into 9 smaller subsets (9 directories).
+- Each subset has a number of channels.
+- Open one of the subset directories channel that contains the `.jpg` images by pressing `Open Dir`.
+- Choose the save directory to be the same directory of the channel (that contains the `.jpg` images) by pressing `Change Save Dir`.
+- Ensure `YOLO` is selected as the save format (`PascalVOC` is the default), change it by pressing on `PascalVOC`.
+- Follow the instructions on how to navigate the images and how to label in this readme file below.
+- For each image, if all the license plate (LP) characters are visible on any vehicle and you can read it, then for that image, label: the vehicle, the LP, and each character of the LP. So one bounding box for each vehicle, lp and characters.
+- Example of a labelled image:
+
+![labelImg_ex](demo/labelled_img_example.PNG "Labelled img example")
+
+- So if you can read the LP characters then label that vehicle and its LP and the LP characters.
+
+- Do the same for all the channels and subsets, ensuring each channel is labelled separately.
+
+## Some notes:
+
+- Suggestion: Turn on auto save by checking `View>Auto Save Mode` and show labels by checking `View>Display Labels`. Please note you can zoom in using CTRL+mouse scroll wheel to label the LP characters easier.
+- Ensure when labelling each character, only capital letters are used as the labels (even if the character is lowercase in the LP itself), this is very important.
+- Don't label any vehicle if its LP is not fully visible or un-readable, label a vehicle only if you can read its LP characters, its fine if it's difficult to read or obscured.
+- If part of a vehicle is off the screen but its LP is still visible, then label that vehicle.
+- For occluded vehicles, see image below as an example on how to label occluded vehicles (vehicles behind other vehicles).
+
+![labelOccluded_ex](demo/occluded_veh_example.PNG "Labelled occluded img example")
+
+- Please ensure all the bounding boxes (BBs) are from edge to edge of the object and contains as little as possible of the background, see the two images above for examples.
+
+If you run into any problems or have any questions, please let me know.
+
+
+Changes made to the [original repo](https://github.com/tzutalin/labelImg):
+
+- Made the latest commit work on windows.
+- Added labelling instructions.
+- Added the required labels.
+
+
+
 LabelImg
 ========
 
