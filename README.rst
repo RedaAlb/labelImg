@@ -23,7 +23,6 @@ python labelImg.py
 - Example of a labelled image:
 
 .. image:: https://github.com/RedaAlb/labelImg/blob/master/demo/labelled_img_example.PNG
-     :alt: labelled_img_example
 
 - So if you can read the LP characters then label that vehicle and its LP and the LP characters.
 
@@ -39,7 +38,6 @@ Some notes:
 - For occluded vehicles, see image below as an example on how to label occluded vehicles (vehicles behind other vehicles).
 
 .. image:: https://github.com/RedaAlb/labelImg/blob/master/demo/occluded_veh_example.PNG
-     :alt: labelOccluded_ex
 
 - Please ensure all the bounding boxes (BBs) are from edge to edge of the object and contains as little as possible of the background, see the two images above for examples.
 
