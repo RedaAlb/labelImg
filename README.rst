@@ -4,10 +4,13 @@ Instructions to label the data:
 - Download dataset from `here <https://drive.google.com/file/d/18pDsp9oVApTHuzPUBG5bMMsx4H8pf34a/view?usp=sharing>`_.
 - Run LabelImg using:
 
-.. code:: shell
-    pyrcc5 -o libs/resources.py resources.qrc
-    python labelImg.py
+```
+pyrcc5 -o libs/resources.py resources.qrc
+```
 
+```
+python labelImg.py
+```
 
 - The dataset is split into 9 smaller subsets (9 directories).
 - Each subset has a number of channels.
