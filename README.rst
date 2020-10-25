@@ -1,12 +1,13 @@
 Instructions to label the data:
 
 - First follow the instructions on this readme file below on how to setup and install (Windows + Anaconda recommended).
-- Download dataset from `here <https://drive.google.com/file/d/18pDsp9oVApTHuzPUBG5bMMsx4H8pf34a/view?usp=sharing>`_
+- Download dataset from `here <https://drive.google.com/file/d/18pDsp9oVApTHuzPUBG5bMMsx4H8pf34a/view?usp=sharing>`_.
 - Run LabelImg using:
 
 ```
 pyrcc5 -o libs/resources.py resources.qrc
 ```
+
 ```
 python labelImg.py
 ```
