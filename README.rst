@@ -1,5 +1,4 @@
-Instructions to label the data
-========
+Instructions to label the data:
 
 - First follow the instructions on this readme file below on how to setup and install (Windows + Anaconda recommended).
 - Download dataset from `here <https://drive.google.com/file/d/18pDsp9oVApTHuzPUBG5bMMsx4H8pf34a/view?usp=sharing>`_
@@ -29,7 +28,6 @@ python labelImg.py
 - Do the same for all the channels and subsets, ensuring each channel is labelled separately.
 
 Some notes:
-~~~~~~~~~~~~~~~~~
 
 - Suggestion: Turn on auto save by checking ``View>Auto Save Mode`` and show labels by checking ``View>Display Labels``. Please note you can zoom in using CTRL+mouse scroll wheel to label the LP characters easier.
 - Ensure when labelling each character, only capital letters are used as the labels (even if the character is lowercase in the LP itself), this is very important.
